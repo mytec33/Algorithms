@@ -8,6 +8,8 @@ namespace Algorithms.SortedSquaredArray
 {
     public class AlgoSortedSquareArray
     {
+        // More brute force. Array is traversed and then for the sort
+        // is traversed once more.
         public static int[] SortedSquareArray(int[] array)
         {
             int[] squares = new int[array.Length];
@@ -24,6 +26,8 @@ namespace Algorithms.SortedSquaredArray
             return squares;
         }
 
+        // Array is traversed once and values are put into the target array
+        // in order. Much more efficient than first attempt.
         public static int[] SortedSquareArray2(int[] array)
         {
             int[] squares = new int[array.Length];
